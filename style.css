@@ -3,6 +3,20 @@ body {
     margin: 0;
 }
 
+button.sign-up {
+    background-color: #3882F6;
+    padding: 8px 32px;
+    border: 1px solid #3882F6;
+    border-radius: 8px;
+}
+
+button.sign-up a {
+    text-decoration: none;
+    color: #E5E7EB;
+    font-size: 18px;
+    font-weight: bold;
+}
+
 .section {
     display: flex;
     justify-content: center;
@@ -11,31 +25,24 @@ body {
 
 .container {
     display: flex;
-    min-width: 700px;
-    max-width: 1000px;
+    flex-direction: column;
+    padding: 24px;
+    min-width: 720px;
+    max-width: 1024px;
 }
 
-.intro {
+.introduction {
     background-color: #1F2937;
 }
 
-.intro .container {
-    flex-direction: column;
-    padding: 16px;
-}
-
-.intro .hero {
-    margin: 100px 0;
-}
-
-.header {
+.introduction .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .header-logo,
-.hero-main {
+.hero-text {
     color: #F9FAF8;
 }
 
@@ -57,47 +64,76 @@ body {
 }
 
 .header-links a,
-.hero-secondary,
+.hero-subtext,
 .image-placeholder {
     color: #E5E7EB;
     font-size: 18px;
 }
 
-.hero-main {
+.hero-text {
     font-size: 48px;
     font-weight: 800;
 }
 
-.hero {
+.introduction .content {
     display: flex;
     align-items: center;
     gap: 48px;
+    margin: 120px 0;
 }
 
-button.sign-up {
-    background-color: #3882F6;
-    padding: 8px 32px;
-    border: 1px solid #3882F6;
-    border-radius: 8px;
-}
-
-button.sign-up a {
-    text-decoration: none;
-    color: #E5E7EB;
-    font-size: 18px;
-    font-weight: bold;
-}
-
-.hero button.sign-up {
+.introduction button.sign-up {
     margin-top: 16px;
 }
 
 .image-placeholder {
-    width: 500px;
-    height: 250px;
+    width: 532px;
+    height: 240px;
     flex-shrink: 0;
-    background-color: #6d747d;
+    background-color: #6D747D;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.information .container {
+    padding-top: 48px;
+    padding-bottom: 132px;
+    gap: 48px;
+}
+
+.information .header {
+    color: #1F2937;
+    font-size: 36px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.information .content {
+    display: flex;
+    gap: 48px;
+}
+
+.image-container {
+    width: 168px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.image-border {
+    box-sizing: border-box;
+    width: 100%;
+    padding-top: 100%;
+    border: 4px solid #3882F6;
+    border-radius: 16px;
+    flex-shrink: 0;
+}
+
+.image-subtext {
+    color: #4B5563;
+    font-size: 18px;
+    text-align: center;
 }
