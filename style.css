@@ -1,5 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
 body {
-    font-family: "Roboto";
+    font-family: "Roboto", sans-serif;
     margin: 0;
 }
 
@@ -31,11 +33,11 @@ button.sign-up a {
     max-width: 1024px;
 }
 
-.introduction {
+.first {
     background-color: #1F2937;
 }
 
-.introduction .header {
+.first .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -75,14 +77,14 @@ button.sign-up a {
     font-weight: 800;
 }
 
-.introduction .content {
+.first .content {
     display: flex;
     align-items: center;
     gap: 48px;
     margin: 120px 0;
 }
 
-.introduction button.sign-up {
+.first button.sign-up {
     margin-top: 16px;
 }
 
@@ -96,20 +98,20 @@ button.sign-up a {
     align-items: center;
 }
 
-.information .container {
+.second .container {
     padding-top: 48px;
     padding-bottom: 132px;
     gap: 48px;
 }
 
-.information .header {
+.second .header {
     color: #1F2937;
     font-size: 36px;
     font-weight: 800;
     text-align: center;
 }
 
-.information .content {
+.second .content {
     display: flex;
     gap: 48px;
 }
@@ -136,4 +138,33 @@ button.sign-up a {
     color: #4B5563;
     font-size: 18px;
     text-align: center;
+}
+
+.third {
+    background-color: #E5E7EB;
+}
+
+.third .container {
+    padding: 128px 0 96px 0;
+}
+
+.third .content {
+    color: #1F2937;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.quote {
+    font-size: 36px;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.author {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: right;
+    margin: 0 5% 0 5%;
 }
