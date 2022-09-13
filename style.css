@@ -5,19 +5,23 @@ body {
     margin: 0;
 }
 
-button.sign-up {
+/* Sign up button */
+
+.sign-up-button {
     background-color: #3882F6;
     padding: 8px 32px;
-    border: 1px solid #3882F6;
+    border: 2px solid #3882F6;
     border-radius: 8px;
 }
 
-button.sign-up a {
+.sign-up-button a {
     text-decoration: none;
-    color: #E5E7EB;
+    color: #F9FAF8;
     font-size: 18px;
     font-weight: bold;
 }
+
+/* Generic section, container and content */
 
 .section {
     display: flex;
@@ -26,25 +30,25 @@ button.sign-up a {
 }
 
 .container {
+    margin: 0;
+    padding: 16px;
+    width: 960px;
     display: flex;
-    flex-direction: column;
-    padding: 24px;
-    min-width: 720px;
-    max-width: 1024px;
-}
-
-.first {
-    background-color: #1F2937;
-}
-
-.first .header {
-    display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
+/* Header, plus some stuff for the intro section */
+
+.header {
+    background-color: #1F2937;
+}
+
+.header .container {
+    justify-content: space-between;
+}
+
 .header-logo,
-.hero-text {
+.intro-section .main-text {
     color: #F9FAF8;
 }
 
@@ -66,59 +70,68 @@ button.sign-up a {
 }
 
 .header-links a,
-.hero-subtext,
+.intro-section .secondary-text,
 .image-placeholder {
     color: #E5E7EB;
     font-size: 18px;
 }
 
-.hero-text {
+/* Intro section */
+
+.intro-section {
+    background-color: #1F2937;
+}
+
+.intro-section .container {
+    gap: 32px;
+    padding-top: 96px;
+    padding-bottom: 128px;
+}
+
+.intro-section .main-text {
     font-size: 48px;
     font-weight: 800;
 }
 
-.first .content {
-    display: flex;
-    align-items: center;
-    gap: 48px;
-    margin: 120px 0;
-}
-
-.first button.sign-up {
+.intro-section .sign-up-button {
     margin-top: 16px;
 }
 
 .image-placeholder {
-    width: 532px;
+    width: 480px;
     height: 240px;
-    flex-shrink: 0;
+    flex: none;
     background-color: #6D747D;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.second .container {
+/* Info section */
+
+.info-section .container {
+    flex-direction: column;
     padding-top: 48px;
     padding-bottom: 132px;
     gap: 48px;
 }
 
-.second .header {
+.info-section .main-text {
     color: #1F2937;
     font-size: 36px;
     font-weight: 800;
     text-align: center;
 }
 
-.second .content {
+.info-section .gallery {
     display: flex;
+    flex-wrap: wrap;
     gap: 48px;
 }
 
 .image-container {
     width: 168px;
-    flex-shrink: 0;
+    flex: none;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -129,9 +142,9 @@ button.sign-up a {
     box-sizing: border-box;
     width: 100%;
     padding-top: 100%;
+    flex: none;
     border: 4px solid #3882F6;
     border-radius: 16px;
-    flex-shrink: 0;
 }
 
 .image-subtext {
@@ -140,31 +153,67 @@ button.sign-up a {
     text-align: center;
 }
 
-.third {
+/* Quote section */
+
+.quote-section {
     background-color: #E5E7EB;
 }
 
-.third .container {
-    padding: 128px 0 96px 0;
-}
-
-.third .content {
+.quote-section .container {
     color: #1F2937;
-    max-width: 800px;
+    padding-top: 128px;
+    padding-bottom: 96px;
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
 
 .quote {
+    width: 83%;
     font-size: 36px;
     font-weight: 300;
     font-style: italic;
 }
 
 .author {
+    width: 75%;
     font-size: 24px;
     font-weight: bold;
     text-align: right;
-    margin: 0 5% 0 5%;
+}
+
+/* Call to action section */
+
+.cta-section .container {
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+
+.cta-section .cta-box {
+    background-color: #3882F6;
+    border: 4px solid #3882F6;
+    border-radius: 8px;
+    width: 100%;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 16px;
+}
+
+.cta-section .main-text {
+    color: #F9FAF8;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.cta-section .secondary-text {
+    color: #E5E7EB;
+    font-size: 18px;
+}
+
+.cta-section .sign-up-button {
+    border-color: #F9FAF8;
 }
