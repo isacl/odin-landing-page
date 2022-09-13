@@ -217,3 +217,20 @@ body {
 .cta-section .sign-up-button {
     border-color: #F9FAF8;
 }
+
+/* Footer */
+
+.footer {
+    background-color: #1F2937;
+    color: #F9FAF8;
+}
+
+.footer .container {
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.footer .copyright {
+    font-size: 18px;
+}
